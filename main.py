@@ -11,7 +11,7 @@ def log_run(user_input, output, evaluation):
         f.write(f"INPUT: {user_input}\n")
         f.write(f"OUTPUT: {output}\n")
         f.write(f"EVAL: {evaluation}\n")
-        f.write(f"CLASS: {classification}\n")
+        f.write(f"CLASS: N/A\n")
         f.write(f"CONFIDENCE: {evaluation.get('confidence', 'N/A')}\n")
 
 def run_system(user_input):
@@ -65,8 +65,3 @@ if __name__ == "__main__":
         output, eval_data = run_system(inp)
         print("OUTPUT:\n", output)
         print("EVAL:", eval_data)
-        print("RAW OUTPUT:", raw_output)
-        print("REFINED OUTPUT:", final_output)
-
-import os
-print("KEY:", os.getenv("OPENAI_API_KEY"))
