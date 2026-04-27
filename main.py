@@ -15,7 +15,9 @@ def log_run(user_input, output, evaluation):
         f.write(f"CONFIDENCE: {evaluation.get('confidence', 'N/A')}\n")
 
 def run_system(user_input):
-    templates = load_data("data/email_templates.txt")
+    from retriever import load_all_data
+
+    templates = load_all_data()
 
     # Retrieval (RAG)
     template = retrieve_relevant(user_input, templates)

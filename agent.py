@@ -8,8 +8,30 @@ def determine_tone(user_input):
     return "neutral"
 
 
-def generate_output(user_input, template, tone):
-    return f"{template}\n\nRequest: {user_input}\nTone: {tone}"
+def generate_output(user_input, context, tone):
+    prompt = f"""
+You are a professional academic assistant.
+
+Example:
+Input: Email professor about missing assignment
+Output: Dear Professor, I sincerely apologize...
+
+Input: Follow up internship
+Output: Hello, I hope you're doing well...
+
+Now respond:
+
+Input: {user_input}
+Context: {context}
+Tone: {tone}
+"""
+
+    response = client.chat.completions.create(
+        model="gpt-4.1-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    return response.choices[0].message.content
 
 
 def critique_output(output):
@@ -40,3 +62,19 @@ def classify_input(user_input):
     elif "internship" in user_input.lower():
         return "professional_email"
     return "general"
+
+def run_agent_steps(user_input, template, tone):
+    steps = {}
+
+    steps["plan"] = f"Identify tone: {tone}, Use template: yes"
+
+    draft = generate_output(user_input, template, tone)
+    steps["draft"] = draft
+
+    critique = critique_output(draft)
+    steps["critique"] = critique
+
+    final = refine_output(draft, critique)
+    steps["final"] = final
+
+    return steps

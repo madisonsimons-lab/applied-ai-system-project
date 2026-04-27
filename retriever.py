@@ -11,3 +11,17 @@ def retrieve_relevant(user_input, templates):
                 return t.strip()
 
     return templates[0].strip()
+
+def load_all_data():
+    files = [
+        "data/email_templates.txt",
+        "data/notes.txt",
+        "data/tone_guidelines.txt"
+    ]
+
+    data = []
+    for f in files:
+        with open(f, "r") as file:
+            data.extend(file.readlines())
+
+    return data
