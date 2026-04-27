@@ -67,3 +67,6 @@ if __name__ == "__main__":
         print("EVAL:", eval_data)
         print("RAW OUTPUT:", raw_output)
         print("REFINED OUTPUT:", final_output)
+
+import os
+print("KEY:", os.getenv("OPENAI_API_KEY"))
