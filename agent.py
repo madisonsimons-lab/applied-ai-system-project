@@ -32,3 +32,11 @@ def refine_output(output, issues):
         output += "\nPlease let me know if you need anything else."
 
     return output
+
+
+def classify_input(user_input):
+    if "professor" in user_input.lower():
+        return "academic_email"
+    elif "internship" in user_input.lower():
+        return "professional_email"
+    return "general"

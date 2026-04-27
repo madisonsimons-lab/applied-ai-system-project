@@ -11,18 +11,19 @@ def log_run(user_input, output, evaluation):
         f.write(f"INPUT: {user_input}\n")
         f.write(f"OUTPUT: {output}\n")
         f.write(f"EVAL: {evaluation}\n")
-
+        f.write(f"CLASS: {classification}\n")
+        f.write(f"CONFIDENCE: {evaluation.get('confidence', 'N/A')}\n")
 
 def run_system(user_input):
     templates = load_data("data/email_templates.txt")
 
-    # 🔍 Retrieval (RAG)
+    # Retrieval (RAG)
     template = retrieve_relevant(user_input, templates)
 
-    # 🧠 Reasoning
+    # Reasoning
     tone = determine_tone(user_input)
 
-    # 🤖 Agent Workflow
+    # Agent Workflow
     output = generate_output(user_input, template, tone)
 
     for _ in range(2):
@@ -31,14 +32,14 @@ def run_system(user_input):
             break
         output = refine_output(output, issues)
 
-    # 🚧 Guardrails
+    # Guardrails
     if not check_output(output):
         output = "Output blocked due to unsafe content."
 
-    # 📊 Evaluation
+    # Evaluation
     evaluation = evaluate(output)
 
-    # 📝 Logging
+    # Logging
     log_run(user_input, output, evaluation)
 
     return output, evaluation
@@ -48,7 +49,12 @@ if __name__ == "__main__":
     test_inputs = [
         "Write an email to my professor about missing an assignment",
         "Follow up on internship application",
-        "Ask for clarification on homework"
+        "Ask for clarification on homework",
+        "Email professor about missing assignment",
+        "Email professor asking for extension",
+        "Follow up internship application",
+        "Ask TA for clarification",
+        "Write professional apology email"
     ]
 
     for inp in test_inputs:
@@ -57,3 +63,5 @@ if __name__ == "__main__":
         output, eval_data = run_system(inp)
         print("OUTPUT:\n", output)
         print("EVAL:", eval_data)
+        print("RAW OUTPUT:", raw_output)
+        print("REFINED OUTPUT:", final_output)
