@@ -242,3 +242,118 @@ Best regards,
 EVAL: {'score': 2, 'length': 386}
 CLASS: N/A
 CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:12.837764 ---
+INPUT: Write an email to my professor about missing an assignment
+OUTPUT: Dear Professor, 
+
+I hope this message finds you well. I am writing to sincerely apologize for missing the deadline for the recent assignment due to unforeseen circumstances. I understand the importance of adhering to deadlines and regret any inconvenience this may have caused.
+
+Please let me know if there is any possibility of submitting the assignment late or any alternative arrangements I may undertake. I appreciate your understanding and consideration.
+
+Thank you for your time.
+
+Sincerely,  
+[Your Name]
+EVAL: {'score': 2, 'length': 511}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:14.461384 ---
+INPUT: Follow up on internship application
+OUTPUT: Dear Professor, 
+
+I hope this message finds you well. I am writing to follow up on my internship application. I sincerely apologize for missing the deadline due to unforeseen circumstances and would be grateful for any consideration you might extend regarding my application. 
+
+Thank you very much for your time and understanding. I look forward to your response.
+
+Best regards,  
+[Your Name]
+EVAL: {'score': 2, 'length': 392}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:16.317146 ---
+INPUT: Ask for clarification on homework
+OUTPUT: Dear Professor, 
+
+I hope this message finds you well. I apologize for missing the deadline due to unforeseen circumstances. I would appreciate it if you could kindly clarify some aspects of the homework assignment so I can complete it accurately.
+
+Thank you for your understanding.
+
+Best regards,  
+[Your Name]
+EVAL: {'score': 2, 'length': 310}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:17.843422 ---
+INPUT: Email professor about missing assignment
+OUTPUT: Dear Professor, 
+
+I hope this message finds you well. I am writing to sincerely apologize for missing the assignment deadline due to unforeseen circumstances. I understand the importance of timely submissions and regret any inconvenience this may have caused. 
+
+If possible, I kindly request an extension or guidance on how I might make up for the missed work. Thank you for your understanding and consideration.
+
+Sincerely,  
+[Your Name]
+EVAL: {'score': 2, 'length': 438}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:18.984164 ---
+INPUT: Email professor asking for extension
+OUTPUT: Dear Professor,
+
+I hope this message finds you well. I am writing to kindly request an extension for the recent assignment, as I was unable to meet the deadline due to unforeseen circumstances. I sincerely apologize for any inconvenience this may cause and would greatly appreciate your consideration.
+
+Thank you very much for your understanding.
+
+Best regards,  
+[Your Name]
+EVAL: {'score': 2, 'length': 375}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:20.877652 ---
+INPUT: Follow up internship application
+OUTPUT: Dear Professor, 
+
+I hope this message finds you well. I am writing to follow up on my internship application. I apologize again for missing the original deadline due to unforeseen circumstances and would be grateful for any consideration you might still offer regarding my application.
+
+Thank you for your time and understanding.
+
+Best regards,  
+[Your Name]
+EVAL: {'score': 2, 'length': 358}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:21.754968 ---
+INPUT: Ask TA for clarification
+OUTPUT: I sincerely apologize.
+Dear [TA's Name],
+
+I hope this message finds you well. I am writing to request clarification on [specific topic or assignment], as I want to ensure I fully understand the expectations moving forward. 
+
+Thank you for your assistance.
+
+Best regards,  
+[Your Name]
+EVAL: {'score': 2, 'length': 284}
+CLASS: N/A
+CONFIDENCE: N/A
+
+--- 2026-04-27 13:07:22.698388 ---
+INPUT: Write professional apology email
+OUTPUT: Dear Professor,
+
+I hope this message finds you well. I am writing to apologize for missing the deadline due to unforeseen circumstances. I understand the importance of adhering to deadlines and regret any inconvenience this may have caused.
+
+Thank you for your understanding.
+
+Sincerely,  
+[Your Name]
+EVAL: {'score': 2, 'length': 301}
+CLASS: N/A
+CONFIDENCE: N/A

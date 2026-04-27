@@ -26,6 +26,9 @@ This project is an AI-powered assistant that helps generate emails and academic 
 - evaluator.py → Scores outputs
 - logs/ → Stores run logs
 
+## Project Video Walkthrough
+Loom Video Link: https://www.loom.com/share/088eb9d889cd4417a60e638f53b8a78f
+
 ## Example Input
 Write an email to my professor about missing an assignment
 
