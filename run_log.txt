@@ -1,0 +1,27 @@
+
+--- 2026-04-27 01:49:23.513120 ---
+INPUT: Write an email to my professor about missing an assignment
+OUTPUT: Dear Professor, I apologize for missing the deadline due to unforeseen circumstances...
+
+Request: Write an email to my professor about missing an assignment
+
+Tone: formal
+EVAL: {'score': 2, 'length': 170}
+
+--- 2026-04-27 01:49:23.513208 ---
+INPUT: Help me follow up on an internship
+OUTPUT: Dear Professor, I apologize for missing the deadline due to unforeseen circumstances...
+
+Request: Help me follow up on an internship
+
+Tone: professional
+EVAL: {'score': 2, 'length': 152}
+
+--- 2026-04-27 01:49:23.513252 ---
+INPUT: Ask for clarification on homework
+OUTPUT: Dear Professor, I apologize for missing the deadline due to unforeseen circumstances...
+
+Request: Ask for clarification on homework
+
+Tone: neutral
+EVAL: {'score': 2, 'length': 146}
